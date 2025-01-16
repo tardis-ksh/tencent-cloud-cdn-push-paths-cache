@@ -1,4 +1,4 @@
-name: Test
+name: ✅ test
 
 on:
   push:
@@ -18,6 +18,10 @@ jobs:
       # default test
       - uses: ./
         with:
+          Urls: |
+            https://test.ksh7.com/
+          secret_id: ${{secrets.TENCENT_CDN_CACHE_SECRET_ID}}
+          secret_key: ${{secrets.TENCENT_CDN_CACHE_SECRET_KEY}}
 
   test-passing:
     needs: [test]

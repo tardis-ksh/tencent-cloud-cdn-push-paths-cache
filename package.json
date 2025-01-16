@@ -1,3 +1,18 @@
 {
-  "version": "0.5.0"
+  "name": "tencent-cloud-cdn-push-paths-cache",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.15.2",
+  "scripts": {},
+  "main": "bootstrap.js",
+  "files": [
+    "index.js",
+    "bootstrap.js"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.11.1",
+    "@tardis-ksh/tencent": "^2.4.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.4.2"
+  }
 }
