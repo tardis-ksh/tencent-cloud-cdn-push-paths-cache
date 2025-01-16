@@ -3,9 +3,9 @@ import core from "@actions/core";
 import { pushUrlsCache } from "@tardis-ksh/tencent/cdn";
 
 const inputs = {
-  Urls: core.getInput("paths")?.split(/\s+/).filter(Boolean),
-  UrlEncode: core.getInput("url_encode"),
-  Area: core.getInput("area"),
+  Urls: core.getInput("Urls")?.split(/\s+/).filter(Boolean),
+  UrlEncode: core.getInput("UrlEncode"),
+  Area: core.getInput("Area"),
   UserAgent: core.getInput("UserAgent"),
   Layer: core.getInput("Layer"),
 };
