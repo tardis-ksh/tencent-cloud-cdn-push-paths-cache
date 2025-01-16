@@ -10,6 +10,12 @@ const inputs = {
   Layer: core.getInput("Layer"),
 };
 
+Object.entries(inputs).forEach(([key, value]) => {
+  if (value === "") {
+    delete inputs[key];
+  }
+});
+
 const credentials = {
   secretId: core.getInput("secret_id"),
   secretKey: core.getInput("secret_key"),

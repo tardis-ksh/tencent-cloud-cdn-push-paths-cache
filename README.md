@@ -1,8 +1,3 @@
-# basic-actions-template
-basic actions template, easy create action
+# Tencent-Cloud-CDN-Push-Paths-Cache
 
-[![Test](https://github.com/kshao123/basic-actions-template/actions/workflows/test.yml/badge.svg)](https://github.com/kshao123/basic-actions-template/actions/workflows/test.yml)
-
-# Create a Basic Action
-
-Click the `Use this template` to use
+[![✅ test](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/actions/workflows/test.yml/badge.svg)](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/actions/workflows/test.yml)
