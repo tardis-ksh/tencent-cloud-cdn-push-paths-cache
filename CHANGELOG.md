@@ -1,3 +1,12 @@
+## [1.3.2](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/compare/v1.3.1...v1.3.2) (2025-02-01)
+
+
+### Bug Fixes
+
+* deps problem ([eafb164](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/commit/eafb164246c0740b2487965103b2293d0583da1d))
+
+
+
 ## [1.3.1](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/compare/v1.3.0...v1.3.1) (2025-02-01)
 
 
