@@ -15,6 +15,9 @@ importers:
         specifier: ^2.4.0
         version: 2.4.0
     devDependencies:
+      '@types/node':
+        specifier: ^22.13.1
+        version: 22.13.1
       prettier:
         specifier: ^3.4.2
         version: 3.4.2
@@ -39,6 +42,9 @@ packages:
 
   '@tardis-ksh/tencent@2.4.0':
     resolution: {integrity: sha512-ttRaDVr71UUeL1esus9n8wjOpPGvddmKgTdzV78SJihQaCrj5tpw9tTLXp7U5Cf0b/sGmNL9o5aAFqSnierqNA==}
+
+  '@types/node@22.13.1':
+    resolution: {integrity: sha512-jK8uzQlrvXqEU91UxiK5J7pKHyzgnI1Qnl0QDHIgVGuolJhRb9EEl28Cj9b3rGR8B2lhFCtvIm5os8lFnO/1Ew==}
 
   agent-base@6.0.2:
     resolution: {integrity: sha512-RZNwNclF7+MS/8bDg70amg32dyeZGZxiDuQmZxKLAlQjr3jGyLx+4Kkk58UO7D2QdgFIQCovuSuZESne6RG6XQ==}
@@ -136,6 +142,9 @@ packages:
     resolution: {integrity: sha512-1h/Lnq9yajKY2PEbBadPXj3VxsDDu844OnaAo52UVmIzIvwwtBPIuNvkjuzBlTWpfJyUbG3ez0KSBibQkj4ojg==}
     engines: {node: '>=0.6.11 <=0.7.0 || >=0.7.3'}
 
+  undici-types@6.20.0:
+    resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
+
   undici@5.28.4:
     resolution: {integrity: sha512-72RFADWFqKmUb2hmmvNODKL3p9hcB6Gt2DOQMis1SEBaV6a4MH8soBvzg+95CYhCKPFedut2JY9bMfrDl9D23g==}
     engines: {node: '>=14.0'}
@@ -178,6 +187,10 @@ snapshots:
     transitivePeerDependencies:
       - encoding
       - supports-color
+
+  '@types/node@22.13.1':
+    dependencies:
+      undici-types: 6.20.0
 
   agent-base@6.0.2:
     dependencies:
@@ -265,6 +278,8 @@ snapshots:
   tslib@1.13.0: {}
 
   tunnel@0.0.6: {}
+
+  undici-types@6.20.0: {}
 
   undici@5.28.4:
     dependencies:

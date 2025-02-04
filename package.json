@@ -13,6 +13,7 @@
     "@tardis-ksh/tencent": "^2.4.0"
   },
   "devDependencies": {
+    "@types/node": "^22.13.1",
     "prettier": "^3.4.2"
   }
 }

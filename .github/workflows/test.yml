@@ -15,8 +15,8 @@ jobs:
         with:
           ref: ${{ github.ref }}
 
-      - name: clean deps file
-        run: rm -rf ./package.json
+#      - name: clean deps file
+#        run: rm -rf ./package.json
 
       # default test
       - uses: ./
