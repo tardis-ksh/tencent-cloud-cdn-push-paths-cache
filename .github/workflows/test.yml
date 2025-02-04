@@ -20,6 +20,7 @@ jobs:
 
       # default test
       - uses: ./
+        name: push paths cache
         with:
           Urls: |
             https://test.ksh7.com/
