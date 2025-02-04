@@ -10,6 +10,7 @@ const baseConfig = {
 // 环境默认不含有 pnpm
 child_process.execSync('la -la', baseConfig);
 child_process.execSync('corepack cache clean', baseConfig);
+child_process.execSync('corepack', baseConfig);
 child_process.execSync('corepack enable --force', baseConfig);
 
 if (!(await fs.readFile(path.resolve(depsFile)))) {
