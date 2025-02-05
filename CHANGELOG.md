@@ -1,3 +1,12 @@
+# [1.10.0](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/compare/v1.9.0...v1.10.0) (2025-02-05)
+
+
+### Features
+
+* test auth ([73f5d45](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/commit/73f5d450199bd120153446441ebdb16b17b70e2d))
+
+
+
 # [1.9.0](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/compare/v1.8.0...v1.9.0) (2025-02-05)
 
 
@@ -31,15 +40,6 @@
 ### Features
 
 * add deps file check ([8eb5743](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/commit/8eb5743760051a6912cdc4fe431429b1de39409b))
-
-
-
-# [1.5.0](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/compare/v1.4.0...v1.5.0) (2025-02-04)
-
-
-### Features
-
-* add deps file check ([90bd3c2](https://github.com/tardis-ksh/tencent-cloud-cdn-push-paths-cache/commit/90bd3c22a74ccd2874760f097108df80ba7744e1))
 
 
 
