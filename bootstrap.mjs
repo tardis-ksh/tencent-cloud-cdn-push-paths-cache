@@ -9,7 +9,7 @@ const baseConfig = {
 
 // 环境默认不含有 pnpm
 child_process.execSync('node -v', baseConfig);
-child_process.execSync('corepack enable', baseConfig);
+child_process.execSync('corepack enable && corepack prepare pnpm@9.15.5 --activate', baseConfig);
 
 // if (!(await fs.readFile(path.resolve(depsFile)))) {
 // 	child_process.execSync('pnpm init', baseConfig);
