@@ -8,11 +8,12 @@ const baseConfig = {
 };
 
 // 环境默认不含有 pnpm
-child_process.execSync('sudo corepack enable', baseConfig);
+child_process.execSync('node -v', baseConfig);
+child_process.execSync('corepack enable', baseConfig);
 
-if (!(await fs.readFile(path.resolve(depsFile)))) {
-	child_process.execSync('pnpm init', baseConfig);
-}
+// if (!(await fs.readFile(path.resolve(depsFile)))) {
+// 	child_process.execSync('pnpm init', baseConfig);
+// }
 
 child_process.execSync('pnpm i @tardis-ksh/tencent @actions/core -S --no-audit --no-progress', baseConfig);
 
