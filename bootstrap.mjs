@@ -8,12 +8,11 @@ const baseConfig = {
 };
 
 // 环境默认不含有 pnpm
-child_process.execSync('node -v', baseConfig);
-child_process.execSync('corepack enable && corepack prepare pnpm@9.15.5 --activate', baseConfig);
+child_process.execSync('npm i pnpm -g', baseConfig);
 
-// if (!(await fs.readFile(path.resolve(depsFile)))) {
-// 	child_process.execSync('pnpm init', baseConfig);
-// }
+if (!(await fs.readFile(path.resolve(depsFile)))) {
+	child_process.execSync('pnpm init', baseConfig);
+}
 
 child_process.execSync('pnpm i @tardis-ksh/tencent @actions/core -S --no-audit --no-progress', baseConfig);
 
