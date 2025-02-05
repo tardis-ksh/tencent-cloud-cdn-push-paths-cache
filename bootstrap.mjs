@@ -14,6 +14,6 @@ if (!(await fs.readFile(path.resolve(depsFile)))) {
 	child_process.execSync('pnpm init', baseConfig);
 }
 
-child_process.execSync('pnpm i @tardis-ksh/tencent @actions/core -S --no-audit --no-progress', baseConfig);
+child_process.execSync('pnpm i @tardis-ksh/tencent @actions/core -S', baseConfig);
 
 import('./index.mjs');
