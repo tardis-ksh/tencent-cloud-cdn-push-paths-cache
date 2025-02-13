@@ -1,27 +1,26 @@
 import child_process from 'child_process';
-import fs from 'fs/promises';
-import path from 'path';
+import fs from 'fs/promises'
+import path from 'path'
 import { fileURLToPath } from 'url';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
-console.log(__dirname, '__dirname', process.cwd());
-console.log(import.meta);
 
 const depsFile = 'package.json';
 const baseConfig = {
-	stdio: 'inherit', cwd: process.cwd()
+	stdio: 'inherit', cwd: __dirname
 };
 
-/**
- * 环境默认不含有 pnpm
- * 启用 corepack pnpm（node -v: v20.18.2 in actions）：https://github.com/pnpm/pnpm/issues/9029
-*/
 child_process.execSync('npm i pnpm -g', baseConfig);
 
-if (!(await fs.readFile(path.resolve(depsFile)))) {
+try {
+	await fs.readFile(path.join(__dirname, depsFile))
+} catch (error) {
+	console.error('no deps file found', error)
+	console.log('create package.json ...');
 	child_process.execSync('pnpm init', baseConfig);
 }
 
 child_process.execSync('pnpm i @tardis-ksh/tencent @actions/core -S', baseConfig);
+child_process.execSync('ls -la', baseConfig);
 
-import('./index.mjs');
+await import('./index.mjs');
