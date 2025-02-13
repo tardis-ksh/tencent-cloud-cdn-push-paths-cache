@@ -3,7 +3,7 @@ import fs from 'fs/promises';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-const __dirname = fileURLToPath(import.meta.dirname);
+const __dirname = fileURLToPath(new URL('.', import.meta.url));
 console.log(__dirname, '__dirname', process.cwd());
 console.log(import.meta);
 
