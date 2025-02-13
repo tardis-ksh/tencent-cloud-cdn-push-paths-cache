@@ -1,6 +1,11 @@
 import child_process from 'child_process';
-import fs from 'fs/promises'
-import path from 'path'
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = fileURLToPath(import.meta.dirname);
+console.log(__dirname, '__dirname', process.cwd());
+console.log(import.meta);
 
 const depsFile = 'package.json';
 const baseConfig = {
